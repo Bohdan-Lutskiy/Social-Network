@@ -9,7 +9,7 @@ import java.util.Objects;
 
 @Entity
 @Table
-public class Message {
+public class Message{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonView(Views.Id.class)
