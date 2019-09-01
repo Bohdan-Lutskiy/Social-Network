@@ -1,5 +1,6 @@
 package com.study.sarafan.controller;
 
+
 import com.fasterxml.jackson.annotation.JsonView;
 import com.study.sarafan.domain.Message;
 import com.study.sarafan.domain.Views;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
+
 
 @RestController
 @RequestMapping("message")
@@ -53,5 +55,4 @@ public class MessageController {
     public void delete(@PathVariable("id") Message message) {
         messageRepo.delete(message);
     }
-
 }
